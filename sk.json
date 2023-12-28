@@ -4,7 +4,7 @@
   "sites": [
     {
       "key": "豆瓣",
-      "name": "🎯 公益接口，微信公众号：乌鸦不太黑",
+      "name": "🎯 公益接口:sky4726",
       "type": 3,
       "api": "./lib/drpy2.min.js",
       "searchable": 1,
@@ -620,6 +620,56 @@
       "changeable": 0,
       "ext": "./lib/bilibili.json"
     },
+    {
+            "key": "吉普影福利网",
+            "name": "吉普影福利网",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "免嗅": "1",
+                "数组": "<a class=\"img-pic\"&&</ a>",
+                "线路二次截取": "<ul class=\"details-play-nav hidden-xs clearfix\"&&</ul>",
+                "线路数组": "<li&&</li>",
+                "线路标题": ">&&</ a>",
+                "播放数组": "<ul class=\"play-list fade-in&&</ul>",
+                "分类二次截取": "<ul class=\"swiper-wrapper clearfix\"&&</ul>",
+                "分类数组": "<li&&</li>",
+                "分类标题": ">&&</ a>",
+                "分类ID": "/film/&&.html",
+                "分类url": "https://www.fjtnfy.com/movie/{cateId}.html"
+            }
+        },
+    {
+            "key": "新香蕉天天直播②",
+            "name": "新香蕉天天直播②",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "playerType": 2,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "站名": "香蕉直播",
+                "主页url": "https://avss.vip/zb/",
+                "直接播放": "1",
+                "数组": "<a&&</ a>",
+                "图片": "data-original=\"&&\"",
+                "标题": "title=\"&&\"",
+                "副标题": "<div class=\"duration\">&&</div>",
+                "链接": "href=\"/zb/&&.html\"",
+                "链接前缀": "https://avss.vip/zb/",
+                "链接后缀": ".html",
+                "分类数组": "<li>&&</li>",
+                "分类标题": ">&&</ a>",
+                "分类ID": "/zb/?ju=&&.html",
+                "分类url": "https://avss.vip/zb/?ju={cateId}/zb/{class}.html",
+                "免嗅": "0",
+                "嗅探词": ".m3u8#.mp4#.flv#.m4a#.avi#.mkv#.mov#.3gp#.asf#.rm#.rmvb#.wmv#.mpg#.mpeg#.mpe#.ts#.vob#.mp3#.wma"
+            }
+        },
     {
       "key": "Bili",
       "name": "哔哩🅱合集",
